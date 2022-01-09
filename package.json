@@ -1,0 +1,29 @@
+{
+  "name": "C10-M03-Projeto02",
+  "version": "1.0.0",
+  "description": "Projeto 02 - Modulo 03 - BlueEdtech - FullStack",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexandreSilvestre21/C10-M03-Projeto02.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlexandreSilvestre21/C10-M03-Projeto02/issues"
+  },
+  "homepage": "https://github.com/AlexandreSilvestre21/C10-M03-Projeto02#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.2",
+    "mongoose": "^6.1.5"
+  }
+}
