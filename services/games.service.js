@@ -9,7 +9,12 @@ const getGameById = async (id) => {
     return await Game.findById(id);
 }
 
+const createGame = async (game) => {
+    return await Game.create(game);
+};
+
 module.exports = {
     getGames,
-    getGameById
-}
+    getGameById,
+    createGame,
+};

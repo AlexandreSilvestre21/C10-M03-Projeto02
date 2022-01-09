@@ -22,8 +22,19 @@ const getGameById = async (req, res) => {
     res.send(game);
 }; 
 
+const createGame = async (req,res) => {
+    const game = req.body;
+    await gamesService.createGame(game).then(() => {
+        res.send({message: "Game criado com sucesso!"})
+
+    }).catch((err) => {
+        res.status(500).send({message: `Erro no servidor: ${err}`});
+    });
+};
+
 module.exports = {
     getGames,
     getGameById,
+    createGame
 };
 
